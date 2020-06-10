@@ -1,8 +1,3 @@
-import sys
-# sys.path.append("doubly_linked_list")
-# from doubly_linked_list import DoublyLinkedList
-
-sys.path.append('src/singly_linked_list/singly_linked_list.py')
 from singly_linked_list import LinkedList
 # #Array
 # class Stack:
@@ -40,3 +35,5 @@ class Stack:
         if self.size > 0:
             self.size -= 1
             return self.storage.remove_tail()
+        else: 
+            return None

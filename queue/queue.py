@@ -15,9 +15,9 @@ Stretch: What if you could only use instances of your Stack class to implement t
 """
 
 import sys
-# sys.path.append("doubly_linked_list")
-# from doubly_linked_list import DoublyLinkedList
-sys.path.append('src/singly_linked_list/singly_linked_list.py')
+sys.path.append("../singly_linked_list")
+
+
 from singly_linked_list import LinkedList
 
 ## Array
@@ -45,7 +45,7 @@ from singly_linked_list import LinkedList
 class Queue:
     def __init__(self):
         self.size = 0
-        self.storage=DoublyLinkedList()
+        self.storage=LinkedList()
     
     def __len__(self):
         return self.size
